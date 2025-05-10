@@ -1,0 +1,1 @@
+This folder contains all of my (MorphoCH22) projects that are done in vivado, whether it be a personal idea, or something based off of RealDigital's courses for the RealDigital Blackboard (Xilinx XC7007S ZYNQ).
