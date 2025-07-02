@@ -1,0 +1,273 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Tue Jul  1 23:58:26 2025
+| Host         : Moss running 64-bit major release  (build 9200)
+| Command      : report_methodology -file BarrelShifter_methodology_drc_routed.rpt -pb BarrelShifter_methodology_drc_routed.pb -rpx BarrelShifter_methodology_drc_routed.rpx
+| Design       : BarrelShifter
+| Device       : xc7z007sclg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 40
++-----------+----------+------------------------------------------------------+--------+
+| Rule      | Severity | Description                                          | Checks |
++-----------+----------+------------------------------------------------------+--------+
+| TIMING-18 | Warning  | Missing input or output delay                        | 22     |
+| XDCC-4    | Warning  | User Clock constraint overwritten with the same name | 1      |
+| XDCC-5    | Warning  | User Non-Timing constraint/property overwritten      | 17     |
++-----------+----------+------------------------------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on direction relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on fillCtrl relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on push relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on setting relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on shiftCtrl[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on shiftCtrl[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on sw[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on sw[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on sw[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on sw[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on sw[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on sw[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on sw[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on sw[7] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on LED[0] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on LED[1] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on LED[2] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on LED[3] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on LED[4] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on LED[5] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on LED[6] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on LED[7] relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+XDCC-4#1 Warning
+User Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous user clock constraint with the same name.
+New: create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 4.000} -add [get_ports clk] (Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 3))
+Previous: create_clock -period 10.000 -name sys_clk_pin -waveform {0.000 4.000} -add [get_ports clk] (Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PIPO.xdc (Line: 3))
+Related violations: <none>
+
+XDCC-5#1 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on LED[0] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 26)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/SIPO.xdc (Line: 10)
+Related violations: <none>
+
+XDCC-5#2 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on LED[1] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 27)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/SIPO.xdc (Line: 11)
+Related violations: <none>
+
+XDCC-5#3 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on LED[2] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 28)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/SIPO.xdc (Line: 12)
+Related violations: <none>
+
+XDCC-5#4 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on LED[3] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 29)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/SIPO.xdc (Line: 13)
+Related violations: <none>
+
+XDCC-5#5 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on LED[4] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 30)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/SIPO.xdc (Line: 14)
+Related violations: <none>
+
+XDCC-5#6 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on LED[5] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 31)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/SIPO.xdc (Line: 15)
+Related violations: <none>
+
+XDCC-5#7 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on LED[6] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 32)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/SIPO.xdc (Line: 16)
+Related violations: <none>
+
+XDCC-5#8 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on LED[7] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 33)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/SIPO.xdc (Line: 17)
+Related violations: <none>
+
+XDCC-5#9 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on clk overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 2)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PIPO.xdc (Line: 2)
+Related violations: <none>
+
+XDCC-5#10 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on sw[0] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 11)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PISO.xdc (Line: 6)
+Related violations: <none>
+
+XDCC-5#11 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on sw[1] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 12)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PISO.xdc (Line: 7)
+Related violations: <none>
+
+XDCC-5#12 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on sw[2] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 13)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PISO.xdc (Line: 8)
+Related violations: <none>
+
+XDCC-5#13 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on sw[3] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 14)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PISO.xdc (Line: 9)
+Related violations: <none>
+
+XDCC-5#14 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on sw[4] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 15)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PISO.xdc (Line: 10)
+Related violations: <none>
+
+XDCC-5#15 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on sw[5] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 16)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PISO.xdc (Line: 11)
+Related violations: <none>
+
+XDCC-5#16 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on sw[6] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 17)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PISO.xdc (Line: 12)
+Related violations: <none>
+
+XDCC-5#17 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on sw[7] overrides a previous user property.
+New Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/BarrelShifter.xdc (Line: 18)
+Previous Source: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/Shift_Registers/Shift_Registers.srcs/constrs_1/new/PISO.xdc (Line: 13)
+Related violations: <none>
+
+
