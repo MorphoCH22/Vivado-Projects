@@ -1,4 +1,14 @@
 `timescale 1ns / 1ps
+/* GOAL: Create a design that debounces an input signal from a pushbutton to create a reliable
+ *      output.
+ *
+ * push is the pushbutton input that is to be debounced
+ * clk is the clock signal provided by the Blackboard FPGA, which is divided into slowClk
+ * out is the debounced output of the pushbutton
+ *
+ * Created by: MorphoCH22
+ * Board used: RealDigital Blackboard (Xilinx XC7007S ZYNQ)
+ */
 
 module PushButtonDebouncer(
         input push, clk, slowClk,

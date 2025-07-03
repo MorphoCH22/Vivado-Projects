@@ -1,4 +1,18 @@
 `timescale 1ns / 1ps
+/* GOAL: Create a design that takes an 8-bit input and shifts or rotates it by 0-3 bits
+ *      left or right.
+ *
+ * clk is the clock created from the Blackboard FPGA.
+ * push, setting, and direction are pushbutton inputs that are verified through debouncers
+ *      to control the 8-bit input, shift or rotate modes, and choose direction respectively.
+ * fillCtrl and shiftCtrl control the fill bit and the amount to shift/rotate by respectively.
+ * sw is the original 8-bit input that is clocked by push and LED is the 8-bit output.
+ *
+ * Created by: MorphoCH22
+ * Board used: RealDigital Blackboard (Xilinx XC7007S ZYNQ)
+ */
+
+
 module BarrelShifter(
         input clk, 
         
@@ -10,12 +24,19 @@ module BarrelShifter(
         output reg [7:0] LED
     );
     
+    // divides the clock to be slower and keep the circuit stable
     wire slowClk;
+    
+    // the registered 8-bit input that is clocked by push
     wire [7:0] toOut;
     
+    // used to indicate when a pushbutton was pressed
     wire pushTrigger, setTrigger, dirTrigger;
+    
+    // control vars that are switched on or off by their respective triggers
     reg setCtrl, dirCtrl;
     
+    // components that feed into shifter
     ClockDivider clock_div  (
                             .clkIn(clk),
                             .clkOut(slowClk)
@@ -49,6 +70,7 @@ module BarrelShifter(
                     .Q(toOut)
                     );
                     
+    // main code for shifter
     always @(posedge(clk)) begin
         if (slowClk)
             if (dirTrigger)
