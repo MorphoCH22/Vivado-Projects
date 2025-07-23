@@ -1,0 +1,269 @@
+
+*** Running vivado
+    with args -log ArithmeticLogicUnit8Bit.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ArithmeticLogicUnit8Bit.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Jul 22 23:52:39 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ArithmeticLogicUnit8Bit.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/utils_1/imports/synth_1/ArithmeticLogicUnit8Bit.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/utils_1/imports/synth_1/ArithmeticLogicUnit8Bit.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ArithmeticLogicUnit8Bit -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15168
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1034.652 ; gain = 470.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ArithmeticLogicUnit8Bit' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ArithmeticLogicUnit8Bit.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'ClockDivider' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ClockDivider.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'ClockDivider' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ClockDivider.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'PushButtonDebouncer' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/PushButtonDebouncer.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'btnReg' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/btnReg.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'btnReg' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/btnReg.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'PushButtonDebouncer' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/PushButtonDebouncer.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'Register' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/Register.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'Register' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/Register.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALU.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'ALUslice' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALUslice.sv:14]
+WARNING: [Synth 8-567] referenced signal 'Cin' should be on the sensitivity list [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALUslice.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'ALUslice' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALUslice.sv:14]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALU.sv:107]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALU.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/bin2bcd.sv:11]
+WARNING: [Synth 8-567] referenced signal 'bin2' should be on the sensitivity list [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/bin2bcd.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/bin2bcd.sv:11]
+INFO: [Synth 8-6157] synthesizing module 'SevenSeg' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/SevenSeg.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/counter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder2to4' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/decoder2to4.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/decoder2to4.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'decoder2to4' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/decoder2to4.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Mux4to1' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/Mux4to1.sv:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/Mux4to1.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4to1' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/Mux4to1.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'SSEG' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/SSEG.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'SSEG' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/SSEG.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'SevenSeg' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/SevenSeg.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'ArithmeticLogicUnit8Bit' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ArithmeticLogicUnit8Bit.sv:24]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1140.766 ; gain = 576.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1140.766 ; gain = 576.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1140.766 ; gain = 576.504
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1140.766 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/constrs_1/new/ArithmeticLogicUnit8Bit.xdc]
+Finished Parsing XDC File [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/constrs_1/new/ArithmeticLogicUnit8Bit.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/constrs_1/new/ArithmeticLogicUnit8Bit.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ArithmeticLogicUnit8Bit_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ArithmeticLogicUnit8Bit_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1207.324 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1207.324 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1207.324 ; gain = 643.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1207.324 ; gain = 643.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 1207.324 ; gain = 643.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1207.324 ; gain = 643.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 10    
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 48    
++---Registers : 
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input    8 Bit        Muxes := 4     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 7     
+	   4 Input    4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:38 . Memory (MB): peak = 1207.324 ; gain = 643.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1333.004 ; gain = 768.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:53 . Memory (MB): peak = 1370.625 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:54 . Memory (MB): peak = 1370.625 ; gain = 806.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1563.238 ; gain = 998.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1563.238 ; gain = 998.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1563.238 ; gain = 998.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1563.238 ; gain = 998.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1563.238 ; gain = 998.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1563.238 ; gain = 998.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     2|
+|4     |LUT2   |    21|
+|5     |LUT3   |    25|
+|6     |LUT4   |    11|
+|7     |LUT5   |    28|
+|8     |LUT6   |    73|
+|9     |MUXF7  |     7|
+|10    |FDRE   |    93|
+|11    |IBUF   |    16|
+|12    |OBUF   |    12|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1563.238 ; gain = 998.977
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:00:59 . Memory (MB): peak = 1563.238 ; gain = 932.418
+Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:03 . Memory (MB): peak = 1563.238 ; gain = 998.977
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1563.441 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1565.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9a7e61ca
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:01:31 . Memory (MB): peak = 1565.340 ; gain = 1215.645
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1565.340 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.runs/synth_1/ArithmeticLogicUnit8Bit.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ArithmeticLogicUnit8Bit_utilization_synth.rpt -pb ArithmeticLogicUnit8Bit_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 22 23:54:27 2025...
