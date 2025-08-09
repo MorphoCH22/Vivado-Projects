@@ -14,7 +14,7 @@
  */
 
 module ALU(
-        input clk, En,
+        input clk, En, res,
         input Cin,
         input [3:0] opcode,
         input [7:0] A, B,
@@ -102,6 +102,10 @@ module ALU(
                         );
                       
     always @(posedge(clk)) begin
+    if (res) begin
+            F <= 0;
+            Cout <= 0;
+    end else
     if (En) begin
         if (opcode > 11) begin
             case (opcode)

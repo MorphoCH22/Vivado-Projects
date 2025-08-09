@@ -3,12 +3,12 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Wed May 28 15:23:30 2025
-# Process ID         : 6368
-# Current directory  : C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/synth_1
+# Start of session at: Thu Aug  7 21:06:23 2025
+# Process ID         : 1072
+# Current directory  : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/synth_1
 # Command line       : vivado.exe -log TemperatureIndicator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TemperatureIndicator.tcl
-# Log file           : C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/synth_1/TemperatureIndicator.vds
-# Journal file       : C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/synth_1\vivado.jou
+# Log file           : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/synth_1/TemperatureIndicator.vds
+# Journal file       : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/synth_1\vivado.jou
 # Running On         : Moss
 # Platform           : Windows Server 2016 or Windows 10
 # Operating System   : 26100
@@ -17,83 +17,78 @@
 # CPU Physical cores : 4
 # CPU Logical cores  : 8
 # Host memory        : 16363 MB
-# Swap memory        : 1073 MB
-# Total Virtual      : 17437 MB
-# Available Virtual  : 4630 MB
+# Swap memory        : 2281 MB
+# Total Virtual      : 18644 MB
+# Available Virtual  : 6575 MB
 #-----------------------------------------------------------
 source TemperatureIndicator.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 347.910 ; gain = 60.652
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/utils_1/imports/synth_1/TemperatureIndicator.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/utils_1/imports/synth_1/TemperatureIndicator.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top TemperatureIndicator -part xc7z007sclg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
 INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12032
+INFO: [Synth 8-7075] Helper process launched with PID 20300
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1028.242 ; gain = 466.410
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1032.285 ; gain = 468.051
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'TemperatureIndicator' [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/sources_1/new/TemperatureIndicator.sv:13]
-INFO: [Synth 8-6155] done synthesizing module 'TemperatureIndicator' (0#1) [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/sources_1/new/TemperatureIndicator.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'TemperatureIndicator' [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/sources_1/new/TemperatureIndicator.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'TemperatureIndicator' (0#1) [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/sources_1/new/TemperatureIndicator.sv:13]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1133.051 ; gain = 571.219
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1136.668 ; gain = 572.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1133.051 ; gain = 571.219
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1136.668 ; gain = 572.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1133.051 ; gain = 571.219
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1136.668 ; gain = 572.434
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1133.051 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1136.668 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '/* GOAL: Create a design that simulates (using switches) a temperature sensor' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:1]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '*      that detects when temperature is within a range of 62.5 and 72.5 degrees' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:2]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '*' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:3]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '* sensor[7:0] represents a temperature sensor that represents temperature' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:4]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '*      using an 8-bit binary number (11111111 = 100 degrees)' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:5]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '* led represents a response led that gives feedback when temperature is in the' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:6]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '*      range of 62.5 and 72.5 degrees' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:7]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '*' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:8]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '* Created by: MorphoCH22' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:9]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '* Board used: RealDigital Blackboard (Xilinx XC7007S ZYNQ)' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:10]
-CRITICAL WARNING: [Designutils 20-970] Unrecognized or unsupported command '*/' found in constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:11]
-CRITICAL WARNING: [Designutils 20-1307] Command '//' is not supported in the xdc constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:13]
-CRITICAL WARNING: [Designutils 20-1307] Command '//' is not supported in the xdc constraint file. [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc:23]
-Finished Parsing XDC File [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TemperatureIndicator_propImpl.xdc].
+Parsing XDC File [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc]
+Finished Parsing XDC File [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.srcs/constrs_1/new/TemperatureIndicator.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TemperatureIndicator_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/TemperatureIndicator_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1186.652 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1170.480 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1186.652 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1170.480 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1186.652 ; gain = 624.820
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1170.480 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1186.652 ; gain = 624.820
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1170.480 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1186.652 ; gain = 624.820
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1170.480 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 1186.652 ; gain = 624.820
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1170.480 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -116,25 +111,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 1186.652 ; gain = 624.820
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1170.480 ; gain = 606.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1333.965 ; gain = 772.133
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1326.117 ; gain = 761.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1333.965 ; gain = 772.133
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1326.117 ; gain = 761.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:45 . Memory (MB): peak = 1343.523 ; gain = 781.691
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1335.664 ; gain = 771.430
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -152,37 +147,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1560.441 ; gain = 998.609
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.734 ; gain = 988.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1560.441 ; gain = 998.609
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.734 ; gain = 988.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1560.441 ; gain = 998.609
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.734 ; gain = 988.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1560.441 ; gain = 998.609
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.734 ; gain = 988.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1560.441 ; gain = 998.609
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.734 ; gain = 988.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1560.441 ; gain = 998.609
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.734 ; gain = 988.500
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -204,26 +199,25 @@ Report Cell Usage:
 |4     |OBUF |     1|
 +------+-----+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 1560.441 ; gain = 998.609
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.734 ; gain = 988.500
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:51 . Memory (MB): peak = 1560.441 ; gain = 945.008
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1560.441 ; gain = 998.609
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:59 . Memory (MB): peak = 1552.734 ; gain = 954.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 1552.734 ; gain = 988.500
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1569.586 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1561.871 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1573.219 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1565.473 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 Synth Design complete | Checksum: b1c325f5
 INFO: [Common 17-83] Releasing license: Synthesis
-15 Infos, 1 Warnings, 13 Critical Warnings and 0 Errors encountered.
+21 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:23 . Memory (MB): peak = 1573.219 ; gain = 1225.523
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1573.219 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/synth_1/TemperatureIndicator.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:08 ; elapsed = 00:01:18 . Memory (MB): peak = 1565.473 ; gain = 1215.137
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1565.473 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/synth_1/TemperatureIndicator.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file TemperatureIndicator_utilization_synth.rpt -pb TemperatureIndicator_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed May 28 15:25:09 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  7 21:07:57 2025...

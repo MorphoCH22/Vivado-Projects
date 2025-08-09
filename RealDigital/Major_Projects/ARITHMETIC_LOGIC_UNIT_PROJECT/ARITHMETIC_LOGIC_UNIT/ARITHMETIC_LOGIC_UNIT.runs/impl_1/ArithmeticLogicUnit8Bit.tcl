@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.runs/impl_1/ArithmeticLogicUnit8Bit.tcl"
+  variable script "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.runs/impl_1/ArithmeticLogicUnit8Bit.tcl"
   variable category "vivado_impl"
 }
 
@@ -97,6 +97,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
@@ -108,7 +109,7 @@ set rc [catch {
   set_param chipscope.maxJobs 2
   set_param runs.launchOptions { -jobs 4  }
   open_checkpoint ArithmeticLogicUnit8Bit_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.cache/wt} [current_project]
 set_property TOP ArithmeticLogicUnit8Bit [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+Time=0 | Opcode=0000 | Cout=x | ssegctrl=xxxx | sseg=xxxxxxx
+Time=3000 | Opcode=0000 | Cout=x | ssegctrl=1xxx | sseg=xxxxxxx
+Time=3000 | Opcode=0000 | Cout=x | ssegctrl=1x1x | sseg=xxxxxxx
+Time=3000 | Opcode=0000 | Cout=x | ssegctrl=1x10 | sseg=xxxxxxx
+Time=3000 | Opcode=0000 | Cout=x | ssegctrl=1110 | sseg=xxxxxxx
+Time=4000 | Opcode=0000 | Cout=x | ssegctrl=1110 | sseg=x0xxxxx
+Time=4000 | Opcode=0000 | Cout=x | ssegctrl=1110 | sseg=x0xxx0x
+Time=4000 | Opcode=0000 | Cout=x | ssegctrl=1110 | sseg=x00xx0x
+Time=4000 | Opcode=0000 | Cout=x | ssegctrl=1110 | sseg=x000x0x
+Time=4000 | Opcode=0000 | Cout=x | ssegctrl=1110 | sseg=0000x01
+Time=4000 | Opcode=0000 | Cout=x | ssegctrl=1110 | sseg=0000001
+Time=6000 | Opcode=0000 | Cout=0 | ssegctrl=1110 | sseg=0000001
+Time=450000 | Opcode=0001 | Cout=0 | ssegctrl=1110 | sseg=0000001
+Time=650000 | Opcode=0010 | Cout=0 | ssegctrl=1110 | sseg=0000001
+Time=850000 | Opcode=0011 | Cout=0 | ssegctrl=1110 | sseg=0000001

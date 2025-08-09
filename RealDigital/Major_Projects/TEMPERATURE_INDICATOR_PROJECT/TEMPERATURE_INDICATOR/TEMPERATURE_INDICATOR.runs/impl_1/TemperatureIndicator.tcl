@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/impl_1/TemperatureIndicator.tcl"
+  variable script "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.runs/impl_1/TemperatureIndicator.tcl"
   variable category "vivado_impl"
 }
 
@@ -108,7 +108,7 @@ set rc [catch {
   set_param chipscope.maxJobs 2
   set_param runs.launchOptions { -jobs 4  }
   open_checkpoint TemperatureIndicator_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/moizc/OneDrive/Desktop/MY AWESOME PROJECTS/vivado/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/TEMPERATURE_INDICATOR_PROJECT/TEMPERATURE_INDICATOR/TEMPERATURE_INDICATOR.cache/wt} [current_project]
 set_property TOP TemperatureIndicator [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

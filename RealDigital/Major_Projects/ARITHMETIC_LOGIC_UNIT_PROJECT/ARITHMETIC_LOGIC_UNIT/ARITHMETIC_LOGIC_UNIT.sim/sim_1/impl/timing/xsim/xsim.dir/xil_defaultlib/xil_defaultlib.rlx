@@ -1,0 +1,6 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.sim/sim_1/impl/timing/xsim/ALU_TestBench_time_impl.v,1754696958,verilog,,,,ALU;ArithmeticLogicUnit8Bit;ClockDivider;PushButtonDebouncer;PushButtonDebouncer_1;PushButtonDebouncer_2;Register;Register_0;SevenSeg;btnReg;btnReg_3;btnReg_4;btnReg_5;btnReg_6;btnReg_7;counter;glbl,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sim_1/new/ALU_TestBench.sv,1754696860,systemVerilog,,,,ALU_TestBench,,uvm,,,,,,

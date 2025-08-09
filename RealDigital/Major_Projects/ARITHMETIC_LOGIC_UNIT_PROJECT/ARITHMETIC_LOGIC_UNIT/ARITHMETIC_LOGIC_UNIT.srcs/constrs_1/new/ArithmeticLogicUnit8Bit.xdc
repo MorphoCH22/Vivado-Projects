@@ -5,6 +5,7 @@ create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 4} [get_ports { c
 # INPUT
 set_property -dict { PACKAGE_PIN W14   IOSTANDARD LVCMOS18 } [get_ports { pushB }];
 set_property -dict { PACKAGE_PIN W13   IOSTANDARD LVCMOS18 } [get_ports { pushA }];
+set_property -dict { PACKAGE_PIN P15   IOSTANDARD LVCMOS18 } [get_ports { pushRes }];
 set_property -dict { PACKAGE_PIN M14   IOSTANDARD LVCMOS18 } [get_ports { pushEn }];
 
 set_property -dict { PACKAGE_PIN R17   IOSTANDARD LVCMOS18 } [get_ports { toPush[0] }];

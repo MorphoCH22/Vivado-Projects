@@ -11,12 +11,16 @@
  
 module Register(
         input [7:0] D,
-        input sysClk, clk,
+        input sysClk, clk, res,
         output reg [7:0] Q
     );
      
 always @(posedge(sysClk)) begin
-    if (clk)
+    if (res)
+        Q <= 0;
+    else
+    if (clk) begin
         Q <= D;
+    end
 end
 endmodule

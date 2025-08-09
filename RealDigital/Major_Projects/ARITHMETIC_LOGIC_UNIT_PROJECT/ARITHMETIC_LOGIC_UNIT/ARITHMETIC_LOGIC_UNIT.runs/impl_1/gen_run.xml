@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1753242933">
+<GenRun Id="impl_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1754709305">
   <File Type="PA-TCL" Name="ArithmeticLogicUnit8Bit.tcl"/>
   <File Type="REPORTS-TCL" Name="ArithmeticLogicUnit8Bit_reports.tcl"/>
   <File Type="INIT-TIMING" Name="ArithmeticLogicUnit8Bit_timing_summary_init.rpt"/>

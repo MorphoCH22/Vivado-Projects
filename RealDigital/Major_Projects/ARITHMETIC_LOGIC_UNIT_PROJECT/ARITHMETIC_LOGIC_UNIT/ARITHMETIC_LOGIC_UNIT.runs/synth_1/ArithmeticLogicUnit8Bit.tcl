@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.runs/synth_1/ArithmeticLogicUnit8Bit.tcl"
+  variable script "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.runs/synth_1/ArithmeticLogicUnit8Bit.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,34 +56,36 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z007sclg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALU.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALUslice.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ClockDivider.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/Mux4to1.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/PushButtonDebouncer.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/Register.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/SSEG.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/SevenSeg.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/bin2bcd.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/btnReg.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/counter.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/decoder2to4.sv}
-  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ArithmeticLogicUnit8Bit.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALU.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ALUslice.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ClockDivider.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/Mux4to1.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/PushButtonDebouncer.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/Register.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/SSEG.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/SevenSeg.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/bin2bcd.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/btnReg.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/counter.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/decoder2to4.sv}
+  {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sources_1/new/ArithmeticLogicUnit8Bit.sv}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -94,12 +96,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/constrs_1/new/ArithmeticLogicUnit8Bit.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/constrs_1/new/ArithmeticLogicUnit8Bit.xdc}}]
+read_xdc {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/constrs_1/new/ArithmeticLogicUnit8Bit.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/constrs_1/new/ArithmeticLogicUnit8Bit.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/utils_1/imports/synth_1/ArithmeticLogicUnit8Bit.dcp}
+read_checkpoint -auto_incremental -incremental {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/utils_1/imports/synth_1/ArithmeticLogicUnit8Bit.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

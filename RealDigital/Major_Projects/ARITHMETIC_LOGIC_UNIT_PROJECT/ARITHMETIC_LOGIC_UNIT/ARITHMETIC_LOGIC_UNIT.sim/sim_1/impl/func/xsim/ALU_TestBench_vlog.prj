@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"ALU_TestBench_func_impl.v" \
+
+sv xil_defaultlib  \
+"../../../../../ARITHMETIC_LOGIC_UNIT.srcs/sim_1/new/ALU_TestBench.sv" \
+
+# Do not sort compile order
+nosort

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date                      : Tue Jul 22 23:56:40 2025
+| Date                      : Fri Aug  8 23:16:15 2025
 | Host                      : Moss running 64-bit major release  (build 9200)
 | Command                   : report_io -file ArithmeticLogicUnit8Bit_io_placed.rpt
 | Design                    : ArithmeticLogicUnit8Bit
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            28 |
+|            29 |
 +---------------+
 
 
@@ -309,7 +309,7 @@ Table of Contents
 | P12        |             |            | VCCINT                  | VCCINT        |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | P13        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | P14        | toPush[5]   | High Range | IO_L6P_T0_34            | INPUT         | LVCMOS18    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| P15        |             | High Range | IO_L24P_T3_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| P15        | pushRes     | High Range | IO_L24P_T3_34           | INPUT         | LVCMOS18    |      34 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | P16        |             | High Range | IO_L24N_T3_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | P17        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | P18        |             | High Range | IO_L23N_T3_34           | User IO       |             |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

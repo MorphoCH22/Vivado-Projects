@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/WIP/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.runs/impl_1'
+HD_PWD='C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/RealDigital/Major_Projects/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

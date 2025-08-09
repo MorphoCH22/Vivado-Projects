@@ -3,6 +3,7 @@ module counter (
 	output reg [1:0] counter
 );
 
+
 reg [15:0] fastCount;
 
 always @ (posedge clk)
