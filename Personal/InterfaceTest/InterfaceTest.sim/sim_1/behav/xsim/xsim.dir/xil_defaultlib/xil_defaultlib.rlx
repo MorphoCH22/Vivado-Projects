@@ -3,6 +3,6 @@
 Nov  8 2024
 22:36:57
 C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/InterfaceTest/InterfaceTest.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/InterfaceTest/InterfaceTest.srcs/sim_1/new/SampleTB.sv,1755487906,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/InterfaceTest/InterfaceTest.srcs/sources_1/new/DUT.sv,,SampleTB;testIF,,uvm,,,,,,
-,,,,,,DUT,,,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/InterfaceTest/InterfaceTest.srcs/sim_1/new/SampleTB.sv,1755852678,systemVerilog,,,,SampleTB;testIF,,uvm,,,,,,
+C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/InterfaceTest/InterfaceTest.srcs/sources_1/new/DUT.sv,1755851628,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/InterfaceTest/InterfaceTest.srcs/sources_1/new/FlipFlop.sv,,DUT,,uvm,,,,,,
 C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/InterfaceTest/InterfaceTest.srcs/sources_1/new/FlipFlop.sv,1755487354,systemVerilog,,C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/InterfaceTest/InterfaceTest.srcs/sim_1/new/SampleTB.sv,,FlipFlop,,uvm,,,,,,

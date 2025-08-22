@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1755488035" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/DUT.dcp">
-  <File Type="PA-TCL" Name="DUT.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1755851830" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/DUT.dcp">
   <File Type="REPORTS-TCL" Name="DUT_reports.tcl"/>
-  <File Type="RDS-RDS" Name="DUT.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="DUT_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="DUT_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="DUT_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="DUT.tcl"/>
+  <File Type="RDS-RDS" Name="DUT.vds"/>
   <File Type="RDS-DCP" Name="DUT.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="DUT_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="DUT_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/FlipFlop.sv">
@@ -52,9 +49,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2024"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

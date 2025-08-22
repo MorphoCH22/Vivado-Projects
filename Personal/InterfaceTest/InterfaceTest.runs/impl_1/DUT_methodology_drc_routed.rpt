@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sun Aug 17 23:36:32 2025
+| Date         : Fri Aug 22 04:39:36 2025
 | Host         : Moss running 64-bit major release  (build 9200)
 | Command      : report_methodology -file DUT_methodology_drc_routed.rpt -pb DUT_methodology_drc_routed.pb -rpx DUT_methodology_drc_routed.rpx
 | Design       : DUT

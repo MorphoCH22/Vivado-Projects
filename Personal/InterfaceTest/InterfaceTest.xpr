@@ -43,6 +43,7 @@
     <Option Name="SimulatorGccVersionVCS" Val="9.2.0"/>
     <Option Name="SimulatorGccVersionRiviera" Val="9.3.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
+    <Option Name="SimulatorLanguage" Val="Verilog"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
@@ -58,7 +59,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="4"/>
+    <Option Name="WTXSimLaunchSim" Val="16"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -116,6 +117,7 @@
       </Config>
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1" RelGenDir="$PGENDIR/sim_1">
+      <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sim_1/new/SampleTB.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -139,6 +141,7 @@
         <Option Name="CosimPdi" Val=""/>
         <Option Name="CosimPlatform" Val=""/>
         <Option Name="CosimElf" Val=""/>
+        <Option Name="NLNetlistMode" Val="funcsim"/>
       </Config>
     </FileSet>
     <FileSet Name="utils_1" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
