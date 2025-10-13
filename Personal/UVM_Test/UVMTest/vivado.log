@@ -1,0 +1,365 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Sep 17 21:08:25 2025
+# Process ID         : 2988
+# Current directory  : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent4952 C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.xpr
+# Log file           : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/vivado.log
+# Journal file       : C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest\vivado.jou
+# Running On         : Moss
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7520U with Radeon Graphics         
+# CPU Frequency      : 2795 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16363 MB
+# Swap memory        : 2818 MB
+# Total Virtual      : 19181 MB
+# Available Virtual  : 7507 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVMTest' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 1177.047 ; gain = 99.656
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'TopModule'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L uvm -prj TopModule_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopModule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FlipFlop
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TopModule_behav xil_defaultlib.TopModule xil_defaultlib.glbl -log elaborate.log -L uvm"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TopModule_behav xil_defaultlib.TopModule xil_defaultlib.glbl -log elaborate.log -L uvm 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2063] Module <FlipFLop> not found while processing module instance <FF0> [C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv:12]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1216.914 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\FlipFlop.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv} {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/glbl.v} {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/glbl.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/glbl.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv}}
+add_files -norecurse {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv} {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv}}
+file mkdir C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new
+file mkdir C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new
+file mkdir C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new
+file mkdir C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new
+file mkdir C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+file mkdir C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new
+file mkdir {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new}
+close [ open {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new/TB.sv} w ]
+add_files -fileset sim_1 {{C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new/TB.sv}}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+open_project {C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.xpr}
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/SPI-Project/SPI_PROJECT/SPI_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+ERROR: [Common 17-180] Spawn failed: No error
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.250 ; gain = 62.621
+ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+current_project UVMTest
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'TopModule'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TopModule' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L uvm -prj TopModule_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FlipFlop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopModule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new/TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TopModule_behav xil_defaultlib.TopModule xil_defaultlib.glbl -log elaborate.log -L uvm"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TopModule_behav xil_defaultlib.TopModule xil_defaultlib.glbl -log elaborate.log -L uvm 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FlipFlop
+Compiling module xil_defaultlib.TopModule
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TopModule_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1313.250 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TopModule_behav -key {Behavioral:sim_1:Functional:TopModule} -tclbatch {TopModule.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TopModule.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1323.461 ; gain = 10.211
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TopModule_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1323.461 ; gain = 10.211
+set_property top TB [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L uvm -prj TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new/TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log -L uvm"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log -L uvm 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv" Line 3. Module TopModule has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv" Line 3. Module FlipFlop has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv" Line 3. Module FlipFlop has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv" Line 3. Module TopModule has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv" Line 3. Module FlipFlop has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv" Line 3. Module FlipFlop has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FlipFlop
+Compiling module xil_defaultlib.TopModule
+Compiling module xil_defaultlib.TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_behav -key {Behavioral:sim_1:Functional:TB} -tclbatch {TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1323.461 ; gain = 0.000
+current_project SPI_project
+close_project
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sim_1\new\TB.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\moizc\Desktop\MY AWESOME PROJECTS\vivado\Personal\UVM_Test\UVMTest\UVMTest.srcs\sources_1\new\TopModule.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_runs impl_1 -jobs 4
+[Wed Sep 17 21:27:36 2025] Launched synth_1...
+Run output will be captured here: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.runs/synth_1/runme.log
+[Wed Sep 17 21:27:36 2025] Launched impl_1...
+Run output will be captured here: C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'TB'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L uvm -prj TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/FlipFlop.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FlipFlop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sources_1/new/TopModule.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TopModule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.srcs/sim_1/new/TB.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log -L uvm"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log -L uvm 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FlipFlop
+Compiling module xil_defaultlib.TopModule
+Compiling module xil_defaultlib.TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TB_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/moizc/Desktop/MY AWESOME PROJECTS/vivado/Personal/UVM_Test/UVMTest/UVMTest.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_behav -key {Behavioral:sim_1:Functional:TB} -tclbatch {TB.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source TB.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1323.461 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 17 21:54:44 2025...

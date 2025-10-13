@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../UVMTest.srcs/sources_1/new/FlipFlop.sv" \
+"../../../../UVMTest.srcs/sources_1/new/TopModule.sv" \
+"../../../../UVMTest.srcs/sim_1/new/TB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

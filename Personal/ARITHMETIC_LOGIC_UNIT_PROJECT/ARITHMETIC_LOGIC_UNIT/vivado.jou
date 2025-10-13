@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Oct 13 17:53:10 2025
+# Process ID         : 9816
+# Current directory  : C:/Users/moizc/Desktop/MYAWESOMEPROJECTS/vivado/Personal/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent8012 C:\Users\moizc\Desktop\MYAWESOMEPROJECTS\vivado\Personal\ARITHMETIC_LOGIC_UNIT_PROJECT\ARITHMETIC_LOGIC_UNIT\ARITHMETIC_LOGIC_UNIT.xpr
+# Log file           : C:/Users/moizc/Desktop/MYAWESOMEPROJECTS/vivado/Personal/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/vivado.log
+# Journal file       : C:/Users/moizc/Desktop/MYAWESOMEPROJECTS/vivado/Personal/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT\vivado.jou
+# Running On         : Moss
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 7520U with Radeon Graphics         
+# CPU Frequency      : 2795 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16363 MB
+# Swap memory        : 2818 MB
+# Total Virtual      : 19181 MB
+# Available Virtual  : 14886 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/moizc/Desktop/MYAWESOMEPROJECTS/vivado/Personal/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.xpr
+export_ip_user_files -of_objects  [get_files C:/Users/moizc/Desktop/MYAWESOMEPROJECTS/vivado/Personal/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sim_1/new/ALU_TestBench.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/moizc/Desktop/MYAWESOMEPROJECTS/vivado/Personal/ARITHMETIC_LOGIC_UNIT_PROJECT/ARITHMETIC_LOGIC_UNIT/ARITHMETIC_LOGIC_UNIT.srcs/sim_1/new/ALU_TestBench.sv
