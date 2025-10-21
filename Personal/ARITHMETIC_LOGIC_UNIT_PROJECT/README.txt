@@ -3,7 +3,7 @@ By: MorphoCH22
 
 In this project, I create a SystemVerilog program that implements an 8-bit Arithmetic Logic Unit with 16 built-in instructions on one or two 8-bit inputs depending on the OpCode.
 
-NOTE: Project was originally located in the RealDigital folder, however, since I added a lot more opcodes, it seemed more fitting to put it as a personal project.
+NOTE: Project was originally located in the RealDigital/Major_Projects folder, however, since I added a lot more opcodes, it seemed more fitting to put it as a personal project.
 
 The OpCodes are as follows
 _________________________________________________________________
